@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="764.0" prefWidth="600.0" style="-fx-background-color: brown;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSearch">
+   <children>
+      <TextField fx:id="searchContactTextField" alignment="CENTER" layoutX="174.0" layoutY="96.0" prefHeight="35.0" prefWidth="255.0" promptText="Stichwortsuche">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Text fill="#fff8f8" layoutX="76.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kontakt suchen/ bearbeiten" underline="true" wrappingWidth="451.13671875">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="BtnCancelSearchContact" layoutX="268.0" layoutY="715.0" mnemonicParsing="false" onAction="#BtnCancelSearchContact" style="-fx-background-color: brown; -fx-border-color: white;" text="Abbruch" textFill="#fffefe" />
+      <TableView fx:id="resultContactsTable" layoutX="32.0" layoutY="227.0" prefHeight="434.0" prefWidth="537.0" style="-fx-background-color: grey;">
+        <columns>
+          <TableColumn fx:id="columnResultOfSearch" prefWidth="536.0" text="Gefundene Kontakte" />
+        </columns>
+      </TableView>
+      <Button fx:id="BtnSearchContact" layoutX="272.0" layoutY="164.0" mnemonicParsing="false" onAction="#BtnSearchContactPressed" style="-fx-background-color: brown; -fx-border-color: white;" text="Suchen" textFill="#fcf8f8" />
+   </children>
+</AnchorPane>
